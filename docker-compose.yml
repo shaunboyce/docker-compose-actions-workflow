@@ -5,6 +5,10 @@ services:
     build: .
     ports:
       - "5000:5000"
+    environment:
+      - noddy=nobody
   redis:
     container_name: redis-backend
     image: "redis:alpine"
+    environment:
+      - Bob=bobo
